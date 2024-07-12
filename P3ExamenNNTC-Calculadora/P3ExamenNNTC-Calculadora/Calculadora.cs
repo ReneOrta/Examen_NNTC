@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -36,24 +37,21 @@ namespace P3ExamenNNTC_Calculadora
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (resBox.Text == "0") 
+            if (resBox.Text != "0")
             {
-                return; //Si el valor mostrado es 0, no se efectua cambio alguno
-            }
-            else
-            {
-                resBox.Text += "0";//Se concatena un 0 al valor actual de la cadena
+                resBox.Text += "0"; // Se concatena un 0 al valor actual de la cadena
             }
         }
 
         private void isItIntlzd(String val)
         {
-            if (resBox.Text == "0" && resBox.Text != null)
+            if (resBox.Text == "0")
             {
                 resBox.Text = val;//Si el valor mostrado es 0 o nulo, se muestra el valor del boton presionado
             }
-            else { 
-                    resBox.Text += val;//Se concatena el valor del boton presionado a la cadena
+            else
+            {
+                resBox.Text += val;//Se concatena el valor del boton presionado a la cadena
             }
         }
 
@@ -82,22 +80,22 @@ namespace P3ExamenNNTC_Calculadora
             return result;//Se retorna el valor del resultado
         }
 
-        private void execOperatiom(char op)
+        private void execOperatiom(char oper)
         {
             String res = resBox.Text; //Se inicializa el resultado de la operación como el valor actual de la ventana
-            if (lbsRes.Text.Contains("=")) 
+            if (lbsRes.Text.Contains("="))
             {
                 //Si el label del resultado contiene el operador igual dentro de la cadena 
                 resInitVal = Convert.ToDouble(res); //El valor inicial toma el valor del valor actual de la ventana
-                lbsRes.Text = res+op; //Se actualiza el valor del label al valor del resultado concatenado con el operador actual
+                lbsRes.Text = res + oper; //Se actualiza el valor del label al valor del resultado concatenado con el operador actual
             }
             else
             {
                 resInitVal = Convert.ToDouble(res); //EL valor inicial toma el valor de la variable del resultado
-                lbsRes.Text += res + op; //Se concatena al valor del label el valor de la entana mas el operador
+                lbsRes.Text += res + oper; //Se concatena al valor del label el valor de la entana mas el operador
                 resBox.Text = "0"; //Se actualiza el valor de la ventana a 0
             }
-            
+
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -148,13 +146,9 @@ namespace P3ExamenNNTC_Calculadora
         private void btnDot_Click(object sender, EventArgs e)
         {
             String dot = "."; //Se incializa el valor de una variable que contiene un .
-            if (resBox.Text.Contains(dot))
+            if (!resBox.Text.Contains(dot))
             {
-                return; //Si la cadena de la ventana ya contiene un punto, no se efectua cambio alguno
-            }
-            else
-            {
-                resBox.Text += dot; //Se concatena un punto al valor de la ventana 
+                resBox.Text += dot; // Se concatena un punto al valor de la ventana 
             }
         }
 
@@ -197,8 +191,15 @@ namespace P3ExamenNNTC_Calculadora
             {
                 if (lbsRes.Text.Contains("="))
                 {
-                    //resInitVal = Convert.ToDouble(resBox.Text);
                     return; //Si el la cadena del label ya contiene un igual, no se efectua cambio alguno
+                }
+                else if (lbsRes.Text.Contains("/") && resBox.Text == "0")
+                {
+                    resBox.Text = "No se puede dividir entre 0";
+                }
+                else if (resBox.Text == "No se puede dividir entre 0") {
+                    lbsRes.Text = "0"; resBox.Text = "0";
+                    resInitVal = 0; resFinalVal = 0;
                 }
                 else
                 {
@@ -206,7 +207,7 @@ namespace P3ExamenNNTC_Calculadora
                     lbsRes.Text += resFinalVal + "="; //Se concatena el valor final y un igual al valor del label
                     result = operation(); //Se inicializa el valor del resultado con el valor que devuelve la llamada del metodo operation
                     resInitVal = 0; resFinalVal = 0; //Se actualizan los valores de los resultados a 0
-                    resBox.Text = Convert.ToString(result); //Se actualiza el valor de la cadena de la ventana,  tomando el valor de la variable auxiliar
+                    resBox.Text = result.ToString(); //Se actualiza el valor de la cadena de la ventana,  tomando el valor de la variable auxiliar
                 }
             }
         }
@@ -214,7 +215,7 @@ namespace P3ExamenNNTC_Calculadora
         //Metodo encargado del borrado del valor de la ventana 
         private void btnCE_Click(object sender, EventArgs e)
         {
-            if (resBox.Text.Length >= 1) 
+            if (resBox.Text.Length >= 1)
             {
                 resBox.Text = "0"; //Si el tamaño de la cadena de la ventana es igual o mayor a 1, se actualiza el valor de la ventana a 0
             }
@@ -224,7 +225,24 @@ namespace P3ExamenNNTC_Calculadora
         private void btnC_Click(object sender, EventArgs e)
         {
             resBox.Text = "0";//Se setea el valor de la cadena de la ventana en 0
-            lbsRes.Text=null;// Se setea el valor del label del resultado como nulo
+            lbsRes.Text = null;// Se setea el valor del label del resultado como nulo
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            string res;
+            if (resBox.Text.Length > 1)
+            {
+                res=resBox.Text;
+                res=res.Substring(0, res.Length - 1);
+                if (resBox.Text.Length == 2 && resBox.Text.Contains("-")) 
+                    resBox.Text = "0";
+                else 
+                    resBox.Text = res;
+            }
+            else {
+                resBox.Text = "0";
+            }
         }
     }
 }

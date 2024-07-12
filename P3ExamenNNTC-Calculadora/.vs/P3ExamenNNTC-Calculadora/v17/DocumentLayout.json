@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:P3ExamenNNTC-Calculadora\\Calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|c:\\users\\usuario\\source\\repos\\examennntc\\p3examennntc-calculadora\\p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|solutionrelative:p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|c:\\users\\usuario\\source\\repos\\examennntc\\p3examennntc-calculadora\\p3examennntc-calculadora\\calculadora.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|solutionrelative:p3examennntc-calculadora\\calculadora.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:P3ExamenNNTC-Calculadora\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|solutionrelative:p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,14 +35,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Calculadora.cs [Dise\u00F1o]",
+              "Title": "Calculadora.resx",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.resx",
+              "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Calculadora.resx",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.resx",
+              "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-12T16:06:10.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Calculadora.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs",
               "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Calculadora.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs [Dise\u00F1o]",
-              "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs [Design]",
+              "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T16:45:43.412Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -56,34 +64,10 @@
               "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Calculadora.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs",
               "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowBAAAAAQAAAA",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAAAMkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T01:09:21.052Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Calculadora.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs",
-              "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs",
-              "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T21:14:03.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Program.cs",
-              "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Program.cs",
-              "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T21:05:33.614Z"
             }
           ]
         }

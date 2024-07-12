@@ -337,6 +337,7 @@ namespace P3ExamenNNTC_Calculadora
             btnBack.Text = "<";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.UseWaitCursor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnCE
             // 
