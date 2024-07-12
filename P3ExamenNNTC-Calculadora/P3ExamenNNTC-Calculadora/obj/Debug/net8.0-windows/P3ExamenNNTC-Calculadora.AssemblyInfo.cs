@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P3ExamenNNTC-Calculadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9679e65715be4d7f5230202bb65d42325b83ef6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+822b8730770bb170bab1168872be6b5592ad43aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("P3ExamenNNTC-Calculadora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P3ExamenNNTC-Calculadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

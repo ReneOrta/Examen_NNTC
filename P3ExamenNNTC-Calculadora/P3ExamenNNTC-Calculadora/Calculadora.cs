@@ -83,11 +83,22 @@ namespace P3ExamenNNTC_Calculadora
         private void execOperatiom(char oper)
         {
             String res = resBox.Text; //Se inicializa el resultado de la operación como el valor actual de la ventana
-            if (lbsRes.Text.Contains("="))
+            String[] opers = ["+", "-", "*", "/", "%"];
+            if (opers.Any(op => lbsRes.Text.Contains(op)))
             {
-                //Si el label del resultado contiene el operador igual dentro de la cadena 
-                resInitVal = Convert.ToDouble(res); //El valor inicial toma el valor del valor actual de la ventana
-                lbsRes.Text = res + oper; //Se actualiza el valor del label al valor del resultado concatenado con el operador actual
+                if (lbsRes.Text.Contains("="))
+                {
+                    //Si el label del resultado contiene el operador igual dentro de la cadena 
+                    resInitVal = Convert.ToDouble(res); //El valor inicial toma el valor del valor actual de la ventana
+                    lbsRes.Text = res + oper; //Se actualiza el valor del label al valor del resultado concatenado con el operador actual
+                }
+                else
+                {
+                    lbsRes.Text = res;
+                }
+            }
+            else if (resBox.Text == resInitVal.ToString()) { 
+                return;
             }
             else
             {
@@ -186,10 +197,9 @@ namespace P3ExamenNNTC_Calculadora
         private void btnEquals_Click(object sender, EventArgs e)
         {
             double result; //Se declara una variable auxiliar que almacena el valor del resultado actual 
-
             if (resFinalVal == 0)
             {
-                if (lbsRes.Text.Contains("="))
+                if (lbsRes.Text.Contains("=")|lbsRes.Text=="0")
                 {
                     return; //Si el la cadena del label ya contiene un igual, no se efectua cambio alguno
                 }

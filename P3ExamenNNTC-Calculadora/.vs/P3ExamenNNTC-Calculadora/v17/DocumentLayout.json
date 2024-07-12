@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|solutionrelative:p3examennntc-calculadora\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|c:\\users\\usuario\\source\\repos\\examennntc\\p3examennntc-calculadora\\p3examennntc-calculadora\\calculadora.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\p3examennntc-calculadora\\calculadora.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{5D50C8E1-EF63-446C-8549-5F31F5ABDBFB}|P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora.csproj|solutionrelative:p3examennntc-calculadora\\calculadora.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
@@ -41,8 +41,7 @@
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.resx",
               "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-07-12T16:06:10.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T16:06:10.062Z"
             },
             {
               "$type": "Document",
@@ -64,7 +63,7 @@
               "RelativeDocumentMoniker": "P3ExamenNNTC-Calculadora\\Calculadora.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenNNTC\\P3ExamenNNTC-Calculadora\\P3ExamenNNTC-Calculadora\\Calculadora.cs",
               "RelativeToolTip": "P3ExamenNNTC-Calculadora\\Calculadora.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAAMkAAAA0AAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAUwGQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T01:09:21.052Z",
               "EditorCaption": ""
