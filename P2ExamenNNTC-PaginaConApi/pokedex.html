@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokédex</title>
+    
+    <!--Importando las librerias-->
+    <link href="https://kendo.cdn.telerik.com/themes/8.0.1/default/default-main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2024.2.514/mjs/kendo.all.js" type="module"></script>
+
+    <style>
+        /*Seteando de fondo imagen de pokemon rubí, zafiro */ 
+        body {
+            background-image: url('https://external-preview.redd.it/P2ecVMMQiGB111L3Wb8OUoVfAboo2JnD42AzOzBnUB4.jpg?auto=webp&s=90f9ec57ede500d79fb0a94ae15ffe1cc769e455');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /*Centradndo el texto del h1*/
+        h1{
+            text-align: center;
+        }
+
+        /*Seteando los valores de transparecia para el fondo del contenido de la pagina y el valor de los margenes*/
+        #content {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /*Remarcando en negritas los headers de la tabla*/
+        .k-grid-header{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1 id="pokedex">Pokedex</h1id>
+    <h3 for="filterBy">Filtrar por tipo:</h3>
+    <select id="filterBy"></select>
+    <div id="grid"></div>
+</div>
+
+    <script>
+        $(document).ready(function () {
+            var types = [];
+            var pokemons = [];
+
+            //Mapeando los datos de cada pokemon
+            $.getJSON('https://pokeapi.co/api/v2/pokemon?limit=100', function (data) {
+                var pokemonRequests = data.results.map(function (pokemon) {
+                    return $.getJSON(pokemon.url);
+                });
+
+                //Esperando a que se completen todas las request
+                $.when.apply($, pokemonRequests).then(function () {
+                    var pokeData = Array.from(arguments).map(function (response) {
+                        return response[0];
+                    });
+
+                    //Realizando el mapping de la PokeData a la estructura de llenado de la tabla
+                    pokemons = pokeData.map(function (pokemon) {
+                        var typesArray = pokemon.types.map(function (typeInfo) {
+                            return typeInfo.type.name;
+                        });
+
+                        types = types.concat(typesArray);
+
+                        return {
+                            name: pokemon.name,
+                            height: pokemon.height,
+                            weight: pokemon.weight,
+                            base_experience: pokemon.base_experience,
+                            types: typesArray.join(', ')
+                        };
+                    });
+
+                    //Llenando el compobox con los tipos de pokemons
+                    $("#filterBy").kendoComboBox({
+                        dataSource: types,
+                        change: filterGrid
+                    });
+
+                    //Poblando la tabla con la PokeData
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            data: pokemons,
+                            schema: {
+                                model: {
+                                    fields: {
+                                        name: { type: "string" },
+                                        height: { type: "number" },
+                                        weight: { type: "number" },
+                                        base_experience: { type: "number" },
+                                        types: { type: "string" }
+                                    }
+                                }
+                            },
+                            pageSize: 10
+                        },
+                        pageable: true,
+                        columns: [
+                            { field: "name", title: "Nombre" },
+                            { field: "height", title: "Altura" },
+                            { field: "weight", title: "Peso" },
+                            { field: "base_experience", title: "XP" },
+                            { field: "types", title: "Tipo" }
+                        ]
+                    });
+                });
+            });
+
+            //Función para el filtrado por el tipo de Pokémon
+            function filterGrid() {
+                var selectedType = $("#filterBy").val();
+                var grid = $("#grid").data("kendoGrid");
+                if (selectedType) {
+                    grid.dataSource.filter({
+                        field: "types",
+                        operator: "contains",
+                        value: selectedType
+                    });
+                } else {
+                    grid.dataSource.filter({});
+                }
+            }
+        });
+    </script>
+</body>
+</html>
